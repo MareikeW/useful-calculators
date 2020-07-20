@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+.container {
+  width: 500px;
+  background-color: lightblue;
+  margin: 0 auto;
+  height: 200px;
+}
+
+.container-content {
+  display: flex;
+  justify-content: space-around;
+  background: blue;
+}
+
+.inputField {
+  margin: 2em 0;
+}
+
+.btns {
+  margin: 2em 0;
+  cursor: pointer;
+  padding: 1em 1.2em;
+}
+
+.results {
+  background: pink;
+  font-size: 25px;
+
+}
