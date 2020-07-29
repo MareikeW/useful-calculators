@@ -1,3 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+
+/*---------------
+     home
+ ----------------*/
+.main-heading {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1em;
+}
+
+.calculators-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2em auto;
+    flex-wrap: wrap;
+}
+
+.start-item {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 1em 1.2em;
+  width: 300px;
+  margin: 0.5em auto;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+.start-item:hover,
+.start-item:focus {
+  border-color: purple;
+  color: purple;
+}
+
+/*---------------
+     lbs-kg
+ ----------------*/
 .container {
   width: 90%;
   margin: 0 auto;
@@ -6,21 +53,21 @@
   font-family: monospace;
 }
 
-.pfundKiloHeading {
+.calcHeadings {
   grid-area: heading;
   text-align: center;
   font-size: 2em;
 }
 
-.pfundHeading {
-  grid-area: pfundHeading;
+.inputHeading {
+  grid-area: inputHeading;
   text-align: center;
   background-color: yellow;
   width: 95%;
 }
 
-.kiloHeading {
-  grid-area: kiloHeading;
+.outputHeading {
+  grid-area: outputHeading;
   text-align: center;
 }
 
@@ -50,6 +97,7 @@
   grid-area: ergebnis;
   background-color: yellow;
   text-align: center;
+  margin: auto 0;
   font-size: 1.2em;
 }
 
@@ -57,7 +105,7 @@
   display: grid;
   grid-template-areas:
     'heading heading heading'
-    'pfundHeading . kiloHeading'
+    'inputHeading . outputHeading'
     'pfundInput button ergebnis';
   grid-gap: 1em;
 }
