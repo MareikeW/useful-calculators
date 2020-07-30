@@ -5,6 +5,10 @@
   font-family: monospace;
 }
 
+body {
+  width: 80%;
+  margin: 0 auto;
+}
 
 /*---------------
      home
@@ -16,11 +20,10 @@
 }
 
 .calculators-container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 2em auto;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em auto;
+  flex-wrap: wrap;
 }
 
 .start-item {
@@ -46,11 +49,14 @@
      lbs-kg
  ----------------*/
 .container {
-  width: 90%;
   margin: 0 auto;
-  background-color: lightblue;
   padding: 0.5em 1em;
-  font-family: monospace;
+  display: grid;
+  grid-template-areas:
+    'heading heading heading'
+    'inputHeading . outputHeading'
+    'pfundInput button ergebnis';
+  grid-gap: 1em;
 }
 
 .calcHeadings {
@@ -74,7 +80,23 @@
 .inputField {
   grid-area: pfundInput;
   margin: auto 0;
-  background: blue;
+}
+
+.inputFieldStone {
+  grid-area: stoneInput;
+  margin: auto 0;
+}
+
+.inputFieldPound {
+  grid-area: lbsInput;
+  margin: auto 0;
+}
+
+.inputStyle {
+  border: none;
+  background-color: lightblue;
+  padding: 1em 1.2em;
+  border-radius: 10px;
 }
 
 #pounds {
@@ -84,7 +106,11 @@
 
 .btn {
   grid-area: button;
-  margin: auto 0;
+  margin: 0 auto;
+}
+
+.convertButton {
+  padding: 0.5em 1.2em;
 }
 
 #btn {
@@ -101,11 +127,14 @@
   font-size: 1.2em;
 }
 
-.container {
+.stone-to-kg-container {
   display: grid;
   grid-template-areas:
-    'heading heading heading'
-    'inputHeading . outputHeading'
-    'pfundInput button ergebnis';
+    'heading heading'
+    'inputHeading inputHeading'
+    'stoneInput lbsInput'
+    'button button'
+    'outputHeading outputHeading'
+    'ergebnis ergebnis';
   grid-gap: 1em;
 }

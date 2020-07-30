@@ -7,23 +7,24 @@
   </head>
   <body>
 
-    <section class="container">
+    <section class="stone-to-kg-container">
       <div class="calcHeadings">
         <h3>Stone in Kilogramm</h3>
       </div>
 
       <div class="inputHeading">
-        <h2>Stone</h2>
+        <h2>Stone & Pfund</h2>
       </div>
-      <div class="inputField"><input type="number" id="pounds"></div>
+      <div class="inputFieldStone"><input type="number" id="stone" class="inputStyle" placeholder="Stone"></div>
+      <div class="inputFieldPound"><input type="number" id="lbs" class="inputStyle" placeholder="Pfund"></div>
 
-      <div class="btn"><button id="btn">Berechne</button></div>
+      <div class="btn"><button id="to-kg-btn" class="convertButton">Berechne</button></div>
 
       <div class="outputHeading">
         <h2>Kilogramm</h2>
       </div>
       <div class="result">
-        <p id="result">0</p>
+        <p id="in-kg-result">0</p>
       </div>
     </section>
 
